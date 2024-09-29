@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color:#ECDFCC; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   display: block;
+   
+}
+.navbar1{
+  text-align: center;
+  background-color:#86AB89;
+   padding: 30px;
+   position: sticky;
+   top: 0;
+    z-index: 1;
+  text-decoration: none;
+}
+.navbar1 li{
+    
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: inline;
+    transition: ease-in-out 0.2s;
+ 
+   
+     
+}
+.navbar1 li:hover{
+    margin: 10px;
+    background-color: #fff;
+    border-radius:6px;
+    padding:10px;
+    font-size: 20px;
+}
+.navbar1 i{
+    float: inline-end   ;
+    color: black;
+   
+}
+
+.navbar1 a{
+ text-decoration: none;
+ color: black;
+ transition: ease-in-out 0.5s;
+}
+
+.Welcometext{
+  margin: 0px;
+  text-align: center;
+}
+.Welcometext img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+.feed{
+ overflow: hidden;
+  margin: auto;
+  position: relative;
+  max-width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+.feed:hover .scroll{
+    animation-play-state: paused;
+}
+.feed img{
+ height: 350px;
+ width: 300px;
+ margin: 30px;
+ 
+}
+.scroll{
+    display: inline-block;
+    margin: 0px;
+    border-radius: 8px; 
+    animation: scroll 30s linear infinite;
+}
+.kategori{
+ display: flex;
+ flex-wrap: wrap;
+
+}
+.card img{
+       width: 100%;
+       height: auto;
+        margin: 10px;
+       transition: transform 0.3s ease;
+        background-color: black;
+       transform-origin: center center ;
+}
+
+.card{
+    width: 600px;
+    height: 200px;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color:white;
+    margin: 10px;
+  
+} 
+.card:hover img{
+    transform: scale(1.2);
+}
+.card:nth-child(6){
+   background-image: url(properti/8.promo.jpg);
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0; 
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+ background-color: #86AB89;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: ease-in-out 0.3s;
+}
+.gation a{
+
+padding: 10px;
+padding: 20px;
+border-bottom: solid 1px;
+    
+}
+
+
+.gation a:hover {
+    margin:20px;
+    background-color: #ECDFCC;
+    border-radius: 20px;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+
+}
+
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 10px; 
+    z-index: 2; 
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+.barang{
+    text-align: center;
+    border-bottom: solid 2px;
+    padding: 20px;
+}
+.barang li{
+    display: inline;  
+}
+.barang a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
