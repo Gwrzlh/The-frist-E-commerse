@@ -12,7 +12,7 @@ body{
 .navbar1{
   text-align: center;
   background-color:#86AB89;
-   padding: 30px;
+   padding: 10px;
    position: sticky;
    top: 0;
     z-index: 1;
@@ -40,14 +40,28 @@ body{
 .navbar1 i{
     float: inline-end   ;
     color: black;
-   
 }
 
 .navbar1 a{
- text-decoration: none;
- color: black;
- transition: ease-in-out 0.5s;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    position: relative;
 }
+.navbar1 a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Awal width border 0 */
+    height: 3px; /* Ketebalan border */
+    background-color: #333; /* Warna border */
+    transition: width 0.3s ease;
+}
+
 
 .Welcometext{
   margin: 0px;
@@ -90,34 +104,32 @@ body{
     animation: scroll 30s linear infinite;
 }
 .kategori{
- display: flex;
- flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
 }
-.card img{
-       width: 100%;
-       height: auto;
-        margin: 10px;
-       transition: transform 0.3s ease;
-        background-color: black;
-       transform-origin: center center ;
+.card img{  
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card{
-    width: 600px;
+    width: 480px;
     height: 200px;
     position: relative;
-    border-radius: 30px;
     overflow: hidden;
-    background-color:white;
-    margin: 10px;
-  
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px 0px 0px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 } 
 .card:hover img{
     transform: scale(1.2);
 }
 .card:nth-child(6){
-   background-image: url(properti/8.promo.jpg);
+ background-image: url('8.promo.jpg');
 }
 body {
     font-family: "Lato", sans-serif;
